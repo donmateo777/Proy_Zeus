@@ -1,11 +1,64 @@
 {% extends "base.html" %}
 
-{% block titulo %} SA - INICIO {% endblock %}
+{% block titulo %} SA - Contáctenos {% endblock %}
 
 {% block contenido %} 
-    <H1>Estamos en la pantalla CONTACTENOS</H1>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse aliquam id ullam excepturi amet unde aspernatur, provident nisi vitae omnis non culpa qui. Blanditiis repudiandae deserunt quisquam ut modi.</P>
+<div class="container mt-5">
+    <div class="row">
+        <!-- Información de Contacto -->
+        <div class="col-md-5 mb-4">
+            <div class="p-4 h-100" style="background: rgba(255, 255, 255, 0.05); border-left: 3px solid #00f3ff; border-radius: 5px;">
+                <h2 style="font-family: 'Orbitron', sans-serif; color: #00f3ff; margin-bottom: 20px;">Información de Contacto</h2>
+                <p class="mb-4">Estamos listos para ayudarte con el control de asistencia. Conéctate con nosotros a través de los siguientes canales.</p>
+                
+                <div class="mb-3">
+                    <h5 style="color: #ff00ff;">📍 Dirección</h5>
+                    <p>Av. Tecnológica 123, Ciudad Futura</p>
+                </div>
+                
+                <div class="mb-3">
+                    <h5 style="color: #ff00ff;">📧 Email</h5>
+                    <p>soporte@sistema-asistencia.com</p>
+                </div>
+                
+                <div class="mb-3">
+                    <h5 style="color: #ff00ff;">📱 Teléfono</h5>
+                    <p>+57 300 123 4567</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- Formulario -->
+        <div class="col-md-7 mb-4">
+            <div class="card border-0" style="background: rgba(15, 15, 26, 0.8); box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);">
+                <div class="card-body p-4">
+                    <h2 class="text-center mb-4" style="font-family: 'Orbitron', sans-serif; color: #fff;">Envíanos un Mensaje</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label" style="color: #00f3ff;">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" style="background: #1a1a2e; border: 1px solid #00f3ff; color: #fff;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" style="color: #00f3ff;">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" style="background: #1a1a2e; border: 1px solid #00f3ff; color: #fff;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label" style="color: #00f3ff;">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" style="background: #1a1a2e; border: 1px solid #00f3ff; color: #fff;"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn" style="background: #ff00ff; color: white; font-family: 'Orbitron', sans-serif; border: none; clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);">ENVIAR MENSAJE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
-{% block pie %} Usted esta parado aquí en CONTACTENOS QUE QUIERE HACER {% endblock %}
+{% block pie %} 
+<div class="text-center py-3" style="color: #888;">
+    &copy; 2026 Sistema de Asistencia. Todos los derechos reservados.
+</div>
+{% endblock %}
