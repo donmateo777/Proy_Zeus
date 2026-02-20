@@ -1,11 +1,93 @@
 {% extends "base.html" %}
 
-{% block titulo %} SA - NOSOTROS {% endblock %}
+{% block titulo %} VS. THE WORLD - NOSOTROS {% endblock %}
 
 {% block contenido %} 
-    <H1>Estamos en la pantalla NOSOTROS</H1>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse aliquam id ullam excepturi amet unde aspernatur, provident nisi vitae omnis non culpa qui. Blanditiis repudiandae deserunt quisquam ut modi.</P>
+<style>
+    /* Importamos una fuente estilo 8-bit */
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    
+    /* Override del fondo general para esta página a Negro */
+    body {
+        background-color: #000 !important;
+    }
+
+    .scott-container {
+        font-family: 'Press Start 2P', cursive;
+        background-color: #111;
+        border: 5px solid #ff6600;
+        padding: 20px;
+        margin: 20px auto;
+        box-shadow: 10px 10px 0px #333;
+        max-width: 900px;
+    }
+
+    .scott-title {
+        color: #ff6600;
+        text-shadow: 4px 4px 0px #fff, -2px -2px 0px #333;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+
+    .comic-panel {
+        border: 3px solid #ff6600;
+        background: #222;
+        padding: 15px;
+        position: relative;
+    }
+
+    .stats-bar {
+        height: 15px;
+        background: #000;
+        border: 2px solid #ff6600;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="scott-container">
+        <h1 class="scott-title">LEVEL: NOSOTROS</h1>
+        
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <div class="comic-panel mb-3">
+                    <!-- Imagen estilo Scott Pilgrim -->
+                    <img src="https://preview.redd.it/scott-pilgrim-and-ramona-flowers-not-artist-v0-hepz06r5gaud1.jpeg?width=640&crop=smart&auto=webp&s=e0806175a2cf642a8a069b8818ef94cbc428b584" class="img-fluid" style="border: 2px solid #ff6600;" alt="Scott y Ramona">
+                </div>
+                <div style="text-align: left; font-size: 0.7rem; color: #ff6600;">
+                    <p class="mb-1">HP: <div class="stats-bar"><div style="height: 100%; background: #ff3300; width: 90%;"></div></div></p>
+                    <p class="mb-1">GUTS: <div class="stats-bar"><div style="height: 100%; background: #ffcc00; width: 75%;"></div></div></p>
+                </div>
+            </div>
+            
+            <div class="col-md-7">
+                <div class="comic-panel" style="background: #222;">
+                    <h3 style="font-size: 1rem; color: #ff6600; margin-bottom: 15px;">MISION:</h3>
+                    <p style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 1.1rem; line-height: 1.4; color: #fff;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse aliquam id ullam excepturi amet unde aspernatur.
+                    </p>
+                </div>
+                <br>
+                <div class="text-center">
+                    <button class="btn btn-lg" style="background-color: #ff6600; color: #000; font-family: 'Press Start 2P'; border: 3px solid #fff; box-shadow: 5px 5px 0px #333; text-transform: uppercase;">
+                        Fight!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
 
-{% block pie %} Usted esta parado aquí en NOSOTROS {% endblock %}
+{% block pie %} 
+<div class="text-center" style="font-family: 'Press Start 2P'; font-size: 0.8rem; padding: 20px;">
+    <span style="color: red;">♥</span> GRACIAS POR JUGAR <span style="color: red;">♥</span>
+</div>
+{% endblock %}
+
+
+    
